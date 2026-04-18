@@ -14,15 +14,20 @@
     ul { padding-left: 1.25rem; }
     .meta { color: #6b7280; font-size: 0.95rem; margin-bottom: 1.5rem; }
     a { color: #2563eb; }
+    .notice { border-left: 3px solid #f59e0b; padding-left: 1rem; margin: 1rem 0; }
   </style>
 </head>
 <body>
   <p class="meta"><a href="privacy-policy-ru.html">Русский</a></p>
   <h1>Privacy Policy</h1>
   <p class="meta"><strong>Soma Chat</strong> · Package ID <code>com.kirilldavydov.somachat</code></p>
-  <p class="meta">Last updated: <strong>9 February 2026</strong></p>
+  <p class="meta">Last updated: <strong>18 April 2026</strong></p>
   <p class="meta">Operator: <strong>Kirill Davydov</strong><br />
     Contact: <a href="mailto:cyrdavyd.cy@gmail.com">cyrdavyd.cy@gmail.com</a></p>
+
+  <div class="notice">
+    <p><strong>Wellness journaling only.</strong> The App is for personal health-related notes on your device. It is <strong>not</strong> a medical device and does <strong>not</strong> provide medical advice, diagnosis, or treatment. For the full disclaimer, see the <a href="terms-of-service-en.html">Terms of Service</a>.</p>
+  </div>
 
   <h2>1. Introduction</h2>
   <p>This Privacy Policy describes how the mobile application <strong>Soma Chat</strong> (“the App”) processes information on your device. The App is designed for local health-related journaling in a chat-style interface (messages, vitals, symptoms, prescriptions, and related attachments). Some features are offered under a <strong>free trial</strong> and/or a <strong>paid subscription</strong> as described below.</p>
@@ -39,14 +44,14 @@
   <h2>3. Subscriptions, free trial, and in-app purchases</h2>
   <p><strong>Free trial.</strong> The App includes a time-limited trial (by default <strong>14 days</strong> from the <strong>first launch</strong>). Only the <strong>first-launch timestamp</strong> is stored locally to compute the trial; no payment is required to start the trial.</p>
   <p><strong>Paid subscription.</strong> Where available, paid access is purchased through <strong>Google Play</strong> (Android) or the <strong>Apple App Store</strong> (iOS / iPadOS / Mac, as applicable). <strong>Payment is processed by Google or Apple.</strong> The App’s operator does <strong>not</strong> receive your full payment card details.</p>
-  <p><strong>What is shared for billing.</strong> To verify purchases and subscription status, the App communicates with the <strong>app store</strong> and, where integrated, a <strong>subscription helper SDK</strong> (the codebase is set up for providers such as <strong>RevenueCat</strong> alongside native store billing). That flow typically involves <strong>non-medical</strong> data such as subscription state, <strong>product identifiers</strong>, renewal and <strong>expiry</strong> information, and identifiers associated with your <strong>store account</strong>, as defined by Google and Apple (and by the billing SDK provider if used). It does <strong>not</strong> include the text of your health journal as part of standard purchase validation.</p>
+  <p><strong>What is shared for billing.</strong> To verify purchases and subscription status, the App communicates with the <strong>app store</strong> and, where integrated, a <strong>subscription helper SDK</strong> (the codebase is set up for providers such as <strong>RevenueCat</strong> alongside native store billing). That flow typically involves <strong>billing-related</strong> data only, such as subscription state, <strong>product identifiers</strong>, renewal and <strong>expiry</strong> information, and identifiers associated with your <strong>store account</strong>, as defined by Google and Apple (and by the billing SDK provider if used). It does <strong>not</strong> include the text of your health journal as part of standard purchase validation.</p>
   <p><strong>Premium features.</strong> After the trial ends, certain actions may require an active subscription, including (as implemented in the App): sending <strong>structured</strong> health-related messages and <strong>pain</strong> entries, using structured entries from the <strong>“+”</strong> menu, opening <strong>metric history</strong>, <strong>exporting the chat to PDF</strong>, and creating <strong>additional profiles</strong> beyond the <strong>first</strong> profile. Reading the chat, basic note-style use, and the first profile may remain available without premium, subject to the version you have installed.</p>
   <p><strong>Manage or cancel.</strong> You can manage or cancel a subscription in your <strong>Google Play</strong> or <strong>Apple ID</strong> subscription settings. The App may open or link to the platform’s subscription management page.</p>
   <p>For how Google and Apple process data for purchases, see their respective privacy policies and store terms.</p>
 
   <h2>4. Where data is stored</h2>
   <p>Health and journal data are stored locally using a <strong>SQLite</strong> database and files under the application’s <strong>app data directory</strong> on your device. Temporary files may be created in the cache (for example when generating exports).</p>
-  <p>The App does <strong>not</strong> send your health or chat content to the operator’s servers for storage. <strong>Subscription validation</strong> uses the <strong>app store</strong> (and billing SDK if present), not your medical notes. There is no in-app analytics or crash-reporting SDK in the project that sends personal health content to the developer.</p>
+  <p>The App does <strong>not</strong> send your health or chat content to the operator’s servers for storage. <strong>Subscription validation</strong> uses the <strong>app store</strong> (and billing SDK if present), not the text of your journal entries. There is no in-app analytics or crash-reporting SDK in the project that sends your journal content to the developer.</p>
 
   <h2>5. Sharing and third parties</h2>
   <p>The operator does not receive your health journal from the App by default. Data may leave your device when <strong>you</strong> initiate an action, or through <strong>platform services</strong>, for example:</p>
