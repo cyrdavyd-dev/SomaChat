@@ -20,48 +20,57 @@
   <p class="meta"><a href="privacy-policy-ru.html">Русский</a></p>
   <h1>Privacy Policy</h1>
   <p class="meta"><strong>Soma Chat</strong> · Package ID <code>com.kirilldavydov.somachat</code></p>
-  <p class="meta">Last updated: <strong>April 12, 2026</strong></p>
+  <p class="meta">Last updated: <strong>9 February 2026</strong></p>
   <p class="meta">Operator: <strong>Kirill Davydov</strong><br />
     Contact: <a href="mailto:cyrdavyd.cy@gmail.com">cyrdavyd.cy@gmail.com</a></p>
 
   <h2>1. Introduction</h2>
-  <p>This Privacy Policy describes how the mobile application <strong>Soma Chat</strong> (“the App”) processes information on your device. The App is designed for local health-related journaling in a chat-style interface (messages, vitals, symptoms, prescriptions, and related attachments).</p>
+  <p>This Privacy Policy describes how the mobile application <strong>Soma Chat</strong> (“the App”) processes information on your device. The App is designed for local health-related journaling in a chat-style interface (messages, vitals, symptoms, prescriptions, and related attachments). Some features are offered under a <strong>free trial</strong> and/or a <strong>paid subscription</strong> as described below.</p>
 
   <h2>2. Data we process</h2>
   <p>Depending on what you enter, the App may store on your device:</p>
   <ul>
     <li><strong>Profile data:</strong> display name, date of birth, height, weight, gender (as selected), blood type, country/region key, allergies, conditions, medications, and a local path to a profile photo if you choose one.</li>
     <li><strong>Chat content:</strong> message text, timestamps, message type, and attached files (copies kept in the App’s private data area).</li>
-    <li><strong>App preferences:</strong> e.g. the identifier of the active chat thread, stored locally to restore your session.</li>
+    <li><strong>App preferences:</strong> e.g. the identifier of the active chat thread; the <strong>UTC time of the first launch</strong> (to run the free trial); a <strong>cached snapshot of subscription status</strong> (such as whether access is active, renewal flag, expiry time, and product identifier); and an <strong>anonymous, per-install identifier</strong> generated on the device to link in-app purchases to this installation (for store / billing APIs).</li>
   </ul>
-  <p>Processing happens <strong>on your device</strong>. The current version of the App does <strong>not</strong> provide user accounts or cloud sync to the developer’s servers.</p>
+  <p>Health and chat content are processed <strong>on your device</strong>. The App does <strong>not</strong> provide a separate user account or cloud sync of your health journal to the operator’s own servers.</p>
 
-  <h2>3. Where data is stored</h2>
-  <p>Data is stored locally using a <strong>SQLite</strong> database and files under the application’s <strong>app data directory</strong> on your device. Temporary files may be created in the cache (for example when generating exports).</p>
-  <p>The App does <strong>not</strong> transmit your health or chat data to the operator’s servers for storage. There is no in-app analytics or crash-reporting SDK sending personal data to the developer in the current release.</p>
+  <h2>3. Subscriptions, free trial, and in-app purchases</h2>
+  <p><strong>Free trial.</strong> The App includes a time-limited trial (by default <strong>14 days</strong> from the <strong>first launch</strong>). Only the <strong>first-launch timestamp</strong> is stored locally to compute the trial; no payment is required to start the trial.</p>
+  <p><strong>Paid subscription.</strong> Where available, paid access is purchased through <strong>Google Play</strong> (Android) or the <strong>Apple App Store</strong> (iOS / iPadOS / Mac, as applicable). <strong>Payment is processed by Google or Apple.</strong> The App’s operator does <strong>not</strong> receive your full payment card details.</p>
+  <p><strong>What is shared for billing.</strong> To verify purchases and subscription status, the App communicates with the <strong>app store</strong> and, where integrated, a <strong>subscription helper SDK</strong> (the codebase is set up for providers such as <strong>RevenueCat</strong> alongside native store billing). That flow typically involves <strong>non-medical</strong> data such as subscription state, <strong>product identifiers</strong>, renewal and <strong>expiry</strong> information, and identifiers associated with your <strong>store account</strong>, as defined by Google and Apple (and by the billing SDK provider if used). It does <strong>not</strong> include the text of your health journal as part of standard purchase validation.</p>
+  <p><strong>Premium features.</strong> After the trial ends, certain actions may require an active subscription, including (as implemented in the App): sending <strong>structured</strong> health-related messages and <strong>pain</strong> entries, using structured entries from the <strong>“+”</strong> menu, opening <strong>metric history</strong>, <strong>exporting the chat to PDF</strong>, and creating <strong>additional profiles</strong> beyond the <strong>first</strong> profile. Reading the chat, basic note-style use, and the first profile may remain available without premium, subject to the version you have installed.</p>
+  <p><strong>Manage or cancel.</strong> You can manage or cancel a subscription in your <strong>Google Play</strong> or <strong>Apple ID</strong> subscription settings. The App may open or link to the platform’s subscription management page.</p>
+  <p>For how Google and Apple process data for purchases, see their respective privacy policies and store terms.</p>
 
-  <h2>4. Sharing and third parties</h2>
-  <p>The operator does not receive your health data from the App by default. Data may leave your device when <strong>you</strong> initiate an action, for example:</p>
+  <h2>4. Where data is stored</h2>
+  <p>Health and journal data are stored locally using a <strong>SQLite</strong> database and files under the application’s <strong>app data directory</strong> on your device. Temporary files may be created in the cache (for example when generating exports).</p>
+  <p>The App does <strong>not</strong> send your health or chat content to the operator’s servers for storage. <strong>Subscription validation</strong> uses the <strong>app store</strong> (and billing SDK if present), not your medical notes. There is no in-app analytics or crash-reporting SDK in the project that sends personal health content to the developer.</p>
+
+  <h2>5. Sharing and third parties</h2>
+  <p>The operator does not receive your health journal from the App by default. Data may leave your device when <strong>you</strong> initiate an action, or through <strong>platform services</strong>, for example:</p>
   <ul>
+    <li><strong>In-app purchases:</strong> Google Play and/or Apple process the transaction and related subscription data under their own policies.</li>
     <li><strong>Export / Share:</strong> PDF or related files via the operating system share sheet — you choose the receiving app (email, messenger, cloud storage, etc.).</li>
     <li><strong>Open attachment:</strong> opening a file in another app using OS features.</li>
     <li><strong>Device backup:</strong> depending on your device settings, application data may be included in system backups (including cloud backup where enabled).</li>
   </ul>
 
-  <h2>5. Network and permissions</h2>
-  <p>On <strong>Android</strong>, the App manifest may declare network-related permissions commonly used by the platform. The App does not use these permissions to upload your medical records to the operator’s servers.</p>
-  <p>Access to <strong>photos</strong> for a profile picture and <strong>files</strong> for attachments is requested only through standard system pickers when you choose to add content.</p>
+  <h2>6. Network and permissions</h2>
+  <p>On <strong>Android</strong>, the manifest may declare <strong>Internet</strong> and network-state access, <strong>Google Play Billing</strong> (<code>com.android.vending.BILLING</code>), <strong>camera</strong> (optional hardware, for taking photos where the App supports it), and <strong>vibration</strong>. Network access is required for store billing and related validation, not for uploading your journal text to the operator.</p>
+  <p>Access to <strong>photos</strong> (gallery or camera, where offered) and <strong>files</strong> for attachments is requested through standard system pickers or capture flows when you add content.</p>
 
-  <h2>6. Security and your responsibility</h2>
+  <h2>7. Security and your responsibility</h2>
   <p>Protect your device (screen lock, trusted apps). The operator cannot guarantee the confidentiality of data if the device is compromised or if you share exported files with others.</p>
 
-  <h2>7. Children</h2>
+  <h2>8. Children</h2>
   <p>The App is not directed at collecting data from children. If a parent or guardian enters information about a child, they do so voluntarily and under their own responsibility.</p>
 
-  <h2>8. Changes</h2>
-  <p>This Policy may be updated if the App’s functionality changes. The current version will be published at the same URL you use for the store listing.</p>
+  <h2>9. Changes</h2>
+  <p>This Policy may be updated if the App’s functionality changes (including subscription or trial rules). The current version will be published at the same URL you use for the store listing.</p>
 
-  <h2>9. Contact</h2>
+  <h2>10. Contact</h2>
   <p>For questions about this Privacy Policy: <a href="mailto:cyrdavyd.cy@gmail.com">cyrdavyd.cy@gmail.com</a></p>
 </body>
 </html>
