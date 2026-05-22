@@ -21,7 +21,7 @@
   <p class="meta"><a href="privacy-policy-ru.html">Русский</a></p>
   <h1>Privacy Policy</h1>
   <p class="meta"><strong>Soma Chat</strong> · Package ID <code>com.kirilldavydov.somachat</code></p>
-  <p class="meta">Last updated: <strong>18 April 2026</strong></p>
+  <p class="meta">Last updated: <strong>22 May 2026</strong></p>
   <p class="meta">Operator: <strong>Kirill Davydov</strong><br />
     Contact: <a href="mailto:cyrdavyd.cy@gmail.com">cyrdavyd.cy@gmail.com</a></p>
 
@@ -53,7 +53,22 @@
   <p>Health and journal data are stored locally using a <strong>SQLite</strong> database and files under the application’s <strong>app data directory</strong> on your device. Temporary files may be created in the cache (for example when generating exports).</p>
   <p>The App does <strong>not</strong> send your health or chat content to the operator’s servers for storage. <strong>Subscription validation</strong> uses the <strong>app store</strong> (and billing SDK if present), not the text of your journal entries. There is no in-app analytics or crash-reporting SDK in the project that sends your journal content to the developer.</p>
 
-  <h2>5. Sharing and third parties</h2>
+  <h2>5. Data retention and deletion</h2>
+  <p><strong>How long we keep your data.</strong> Because the App stores your health journal and profile data <strong>locally on your device</strong>, that data is kept on the device for <strong>as long as you keep the App installed and choose to keep the entries</strong>. The operator does <strong>not</strong> hold a separate copy of your journal on its own servers, so there is no separate server-side retention period for journal content.</p>
+  <p><strong>How you can delete your data.</strong> You have full control over your data and can remove it at any time:</p>
+  <ul>
+    <li><strong>Delete individual entries.</strong> In the chat, long-press a message and use the context menu to delete it. Structured records (vitals, pain, prescriptions, medication intakes, conditions, attachments) linked to a deleted message are removed together with it.</li>
+    <li><strong>Delete a profile.</strong> Open profile editing from the chat menu and use <em>Delete profile</em>. Deleting a profile removes <strong>all</strong> chat messages, structured entries, attachments, and the avatar associated with that profile from the device.</li>
+    <li><strong>Reset all App data via your OS.</strong> On <strong>Android</strong>: <em>Settings → Apps → Soma Chat → Storage → Clear data</em> (or <em>Clear storage</em>) erases the local SQLite database, attachments, avatars, cache, and preferences. On <strong>iOS / iPadOS / macOS</strong>: deleting (offloading and removing) the App removes its sandbox, including the database and attachments stored in the App’s private data area.</li>
+    <li><strong>Uninstall the App.</strong> Removing the App from the device deletes the App’s private data directory (database, attachments, avatars, cached previews and exports) under the rules of your operating system.</li>
+    <li><strong>Cached temporary files.</strong> Files that the App generates for previews or PDF export live in the App’s cache area and can be cleared by clearing the App’s cache via OS settings (Android) or by uninstalling the App (iOS/macOS).</li>
+  </ul>
+  <p><strong>Backups outside the App.</strong> If you have enabled device-level backup (for example Google One backup on Android, iCloud backup on iOS/iPadOS, or local Mac backups), copies of the App’s data may exist in those backups under the backup provider’s retention rules. To remove those copies, manage or delete the relevant backup in your device or cloud account settings.</p>
+  <p><strong>Exported and shared files.</strong> If you used <em>Export</em> or <em>Share</em> to send a PDF or other file out of the App (for example by email, messenger, or cloud storage), the App no longer controls those copies. Delete them from the receiving service yourself.</p>
+  <p><strong>Store-side data.</strong> Subscription and purchase records held by <strong>Google Play</strong>, <strong>Apple</strong>, and any billing SDK provider (such as <strong>RevenueCat</strong>) are retained under their own policies. To manage or request deletion of that data, use the respective platform’s account settings and follow the privacy policy of the relevant provider.</p>
+  <p><strong>Contacting the operator.</strong> If you contact the operator by email (see Contact below), the operator may keep that correspondence for as long as needed to respond to your request and to keep records of support communications, and will delete it on reasonable request, unless retention is required by law.</p>
+
+  <h2>6. Sharing and third parties</h2>
   <p>The operator does not receive your health journal from the App by default. Data may leave your device when <strong>you</strong> initiate an action, or through <strong>platform services</strong>, for example:</p>
   <ul>
     <li><strong>In-app purchases:</strong> Google Play and/or Apple process the transaction and related subscription data under their own policies.</li>
@@ -62,20 +77,20 @@
     <li><strong>Device backup:</strong> depending on your device settings, application data may be included in system backups (including cloud backup where enabled).</li>
   </ul>
 
-  <h2>6. Network and permissions</h2>
+  <h2>7. Network and permissions</h2>
   <p>On <strong>Android</strong>, the manifest may declare <strong>Internet</strong> and network-state access, <strong>Google Play Billing</strong> (<code>com.android.vending.BILLING</code>), <strong>camera</strong> (optional hardware, for taking photos where the App supports it), and <strong>vibration</strong>. Network access is required for store billing and related validation, not for uploading your journal text to the operator.</p>
   <p>Access to <strong>photos</strong> (gallery or camera, where offered) and <strong>files</strong> for attachments is requested through standard system pickers or capture flows when you add content.</p>
 
-  <h2>7. Security and your responsibility</h2>
+  <h2>8. Security and your responsibility</h2>
   <p>Protect your device (screen lock, trusted apps). The operator cannot guarantee the confidentiality of data if the device is compromised or if you share exported files with others.</p>
 
-  <h2>8. Children</h2>
+  <h2>9. Children</h2>
   <p>The App is not directed at collecting data from children. If a parent or guardian enters information about a child, they do so voluntarily and under their own responsibility.</p>
 
-  <h2>9. Changes</h2>
+  <h2>10. Changes</h2>
   <p>This Policy may be updated if the App’s functionality changes (including subscription or trial rules). The current version will be published at the same URL you use for the store listing.</p>
 
-  <h2>10. Contact</h2>
+  <h2>11. Contact</h2>
   <p>For questions about this Privacy Policy: <a href="mailto:cyrdavyd.cy@gmail.com">cyrdavyd.cy@gmail.com</a></p>
 </body>
 </html>
